@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="color:red; background:rgba(0,0,1,0.8)">Railway Ticket Booking Form</h1>
+    <span><img src="https://img.freepik.com/free-vector/people-platform-using-chatting-mobile-app-smartphone-social-network-chat-bubble-communication-concept-train-subway-railway-station-full-length-horizontal-vector-illustration_48369-34235.jpg?size=626&ext=jpg" height="400" width="1500"></span>
+    <form>
+        <fieldset>
+            <legend>Personal Details</legend>
+            <label>First Name: <input type="text" name="fname" placeholder="Eg. Shiva"></label>
+            <label>Middle Name: <input type="text" name="mname" placeholder="Eg. Ram"></label>
+            <label>Last Name: <input type="text" name="lname" placeholder="Eg. Yadavar"></label><br><br>
+            <label>Gender: <input type="radio" name="radio"> Male <input type="radio" name="radio"> Female <input type="radio" name="radio"> Others </label><br><br>
+            <label>Age: <input type="number" name="age" placeholder="Eg. 20"></label><br><br>
+            <label>Full Address: </label><br>
+            <textarea name="address" cols="70" placeholder="eg. 202, Apt name, K.L. Road, Sector-22, Navi Mumbai-400077"></textarea><br><br>
+            <label>Mobile/Tel. No: <input type="text" name="phoneno" maxlength="10" placeholder="eg. 1111111111"></label>
+            <label>Email: <input type="email" placeholder="Eg. name.surname@domain.com" size="50"></label>
+
+        </fieldset><br>
+        
+        <fieldset>
+            <legend>Date & Time of Filling</legend>
+            <label>Date: <input type="date"></label>
+            <label>Time: <input type="time"></label>
+            
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Destination</legend>
+            <label>From where: <input type="text" name="from_where" placeholder="eg. Mumbai"></label>
+            <label>To where: <input type="text" name="to_where" placeholder="eg. Delhi"></label>
+
+        </fieldset><br>
+            
+        <fieldset>
+            <legend>Date Range of Journey</legend>
+            <label>From: <input type="date" name="from"></label>
+            <label>To: <input type="date" name="to"></label>
+
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Number of Passengers</legend>
+            <label>No. of children: <input type="number" name="noofchildren" placeholder="below 18 yrs. only"></label>
+            <label>No. of adults: <input type="number" name="noofadults"></label>
+            
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Train Details</legend>
+            <label>Select the Train: </label>
+            <select>
+                <option>---Select Train---</option>
+                <option>Janashatabdi Express</option>
+                <option>Rajdhani Expresss</option>
+                <option>Tejas Express</option>
+                <option>Chennai Express</option>
+                <option>Mumbai-Madgaon-Mandavi Express</option>
+
+            </select>
+
+            <label>Berth</label>
+            <select>
+                <option>---No preference---</option>
+                <option>Upper Berth</option>
+                <option>Middle Berth</option>
+                <option>Lower Berth</option>
+            </select><br><br>
+
+            <label>Do you want window seats? </label>
+            <label>Yes <input type="radio" name="radio"></label>
+            <label>No <input type="radio" name="radio"></label>
+            
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Food Ordering (Canteen Services IRCTC)</legend>
+            <p1>Veg. Menu: </p1>
+            <label><input type="checkbox"> Dal Roti </label>
+            <label><input type="checkbox"> Naan </label>
+            <label><input type="checkbox"> Veg. Kolhapuri </label>
+            <label><input type="checkbox"> Butter Masala </label>
+            <label><input type="checkbox"> Shahi Veg. Kebab </label>
+            <label><input type="checkbox"> Puranpoli </label>
+            <label><input type="checkbox"> Fried Rice </label><br>
+
+            <p2>Non Veg. Menu: </p2>
+            <label><input type="checkbox"> Butter Chicken </label>
+            <label><input type="checkbox"> Tandoori Chicken </label>
+            <label><input type="checkbox"> Omelette Rice </label>
+            <label><input type="checkbox"> Chinese Rice </label>
+            <label><input type="checkbox"> Chicken Crispy </label>
+            <label><input type="checkbox"> Chicken Fingers </label>
+            <label><input type="checkbox"> Chinese Noodles </label>
+            
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Total Price as per the Train Class</legend>
+            <label>Ticket Price based on Train Car Class</label>
+            <select>
+                <option>---select class---</option>
+                <option>Economic Class - Rs. 1,000/-</option>
+                <option>First Class - Rs. 10,000/-</option>
+                <option>Second Class - Rs. 5,000/-</option>
+                <option>AC Car - Rs. 20,000/-</option>
+            </select>
+        </fieldset><br>
+
+        <h4>For Help: <a href="https://www.irctc.com">https://www.irctc.com</a></h4><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button><br>
+
+        <img src="https://t4.ftcdn.net/jpg/03/17/21/95/360_F_317219567_eMVi0YjnOhUyLKSVfQ2KE8ZL9vLfeMb9.jpg" alt="thank_you" width="1500">
+         
+    </form><br>
+    
+</body>
+</html>
