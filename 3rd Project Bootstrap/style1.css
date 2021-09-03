@@ -1,0 +1,84 @@
+.img-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    border: 20px solid;
+    
+}
+
+
+.inner img{
+    height:80vh;
+    width: 80vw;
+}
+
+
+.inner {
+    position: relative;
+    padding: 30px;
+    text-align: center;
+    justify-items: center;
+}
+
+.inner p {
+    margin-top: -150px;
+    margin-bottom: 60px;
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: cursive;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.inner p:hover{
+    animation: exp 1s forwards;
+    cursor:pointer;
+}
+
+.anime img {
+    margin-top: -450px;
+    margin-left: 800px;
+    height: 300px;
+    width: 300px;
+    opacity:0;
+    filter: saturate(150%) contrast(200%);
+}
+
+.inner:hover .anime img{
+    opacity:1;
+    transition: 0.2s ease;
+    transition-delay: 0.5s;
+}
+
+@keyframes exp {
+    0%{ 
+        color: rgba(255, 255, 255, 0.815);
+        text-shadow: 0px 2px 10px white;
+    }
+    100%{
+        color: rgba(255, 0, 0, 0.815);
+        text-shadow: 0px 2px 10px white;
+    }
+}
+
+.inner hr{
+    width: 600px;
+    margin-left: 400px;
+    padding: 2px;
+    margin-bottom: -8px;
+}
+
+.fnt p{
+    font-size: 20px;
+    font-family: cursive;
+}
+
+.container{
+    border:10px solid;
+}
+
+
+
+
+
+

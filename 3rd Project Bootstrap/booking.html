@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style2.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-xl navbar-light bg-color sticky-top" id="top">
+      <div class="container-fluid">
+        <a href="https://www.linkedin.com/in/shubhamnanche/"><img class = "logo" src="./logo.png" width="50px" height="50px"></a>
+        <a class="navbar-brand text-danger" href="./index.html">Shubham Hotels & Resorts</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="https://www.shubhamhotel.com/">Our Network</a>
+            </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="./booking.html">Booking</a>
+          </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./aboutus.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-light"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                More
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="https://www.luxurylink.com/blog/hotels/current-hotel-deals/">Current Deals</a></li>
+                <li><a class="dropdown-item" href="https://livesalesman.com/24x7-hotel-reservations-call-center/">24x7 contact service</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="https://www.facebook.com/FourSeasonsHotelParis">Follow Us!<img class="facebook" src="./facebook.png" width="60px" height="60px"></a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <form class="form-container">
+        <fieldset>
+            <div class="field">
+            <legend>Personal Details</legend>
+            <label>First Name: <input type="text" name="fname" placeholder="Eg. Shiva"></label>
+            <label>Middle Name: <input type="text" name="mname" placeholder="Eg. Ram"></label>
+            <label>Last Name: <input type="text" name="lname" placeholder="Eg. Sahasrabuddhe"></label><br><br>
+            <label class="spacing">Gender: <input class="space" type="radio" name="radio" id="space"> Male <input type="radio" name="radio" id="space"> Female <input type="radio" name="radio" id="space"> Others </label><br><br>
+            <label>Age: <input type="number" name="age" placeholder="Eg. 20"></label><br><br>
+            <label>Full Address: </label><br>
+            <textarea name="address" cols="70" placeholder="eg. 202, Apt name, K.L. Road, Sector-22, Navi Mumbai-400077"></textarea><br><br>
+            <label>Mobile/Tel. No: <input type="text" name="phoneno" maxlength="10" placeholder="eg. 1111111111"></label>
+            <label>Email: <input type="email" placeholder="Eg. name.surname@domain.com" size="50"></label>
+            </div>
+        </fieldset><br>
+
+        <fieldset>
+            <div class="field">
+            <legend>Date & Time of Filling</legend>
+            <label>Date: <input type="date"></label>
+            <label class="shift">Time: <input type="time"></label>
+            </div>
+        </fieldset><br>
+
+        <fieldset>
+            <div class="field">
+            <legend>Destination</legend>
+            <label>From where: <input type="text" name="from_where" placeholder="eg. Mumbai"></label>
+            <label class="shift">To where: <input type="text" name="to_where" placeholder="eg. Delhi"></label>
+            </div>
+        </fieldset><br>
+            
+        <fieldset>
+            <div class="field">
+            <legend>Date Range of Journey</legend>
+            <label>From: <input type="date" name="from"></label>
+            <label class="shift">To: <input type="date" name="to"></label>
+            </div>
+        </fieldset><br>
+        <fieldset>
+            <div class="field">
+            <legend>Number of People</legend>
+            <label>No. of children: <input type="number" name="noofchildren" placeholder="below 18 yrs. only"></label>
+            <label class="shift">No. of adults: <input type="number" name="noofadults"></label>
+            </div>
+        </fieldset><br>
+    </form>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+    
+</body>
+</html>

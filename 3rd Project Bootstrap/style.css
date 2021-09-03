@@ -3,6 +3,56 @@
     padding:0px;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+.logo{
+    margin: 0px 20px;
+    cursor: pointer;
+    justify-content: center;
+    filter:invert(100%) contrast(500%) hue-rotate(90deg) brightness(300%);
+    
+}
+
+.logo:hover{
+    animation: shake 1s infinite;
+    transition: ease-in-out;
+}
+
+.facebook{
+    margin-left: 10px;
+    margin-top: -10px;
+    filter:brightness(100%) saturate(200%) contrast(500%);
+}
+
+@keyframes shake {
+    0%{
+        transform: rotate(0deg);
+        filter: saturate(500%) brightness(300%);
+    }
+    25%{
+        transform: rotate(20deg);
+        filter: saturate(300%) brightness(300%);
+    }
+    50%{
+        transform: rotate(0deg);
+        filter: saturate(500%) brightness(300%);
+    }
+    75%{
+        transform: rotate(-20deg);
+        filter: saturate(300%) brightness(300%);
+    }
+    100%{
+        transform: rotate(0deg);
+        filter: saturate(500%) brightness(300%);
+    }
+}
+
+.bg-color{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
 .carousel-item img{
     width:100%;
     height:93vh;
@@ -15,4 +65,109 @@
 
 .underline{
     text-decoration: none;
+}
+.but{
+    margin-left: 50px;
+    padding-bottom: 35px;
+    text-align: center;
+}
+.but button{
+    border: 2px solid;
+    padding: 20px 100px;
+}
+
+.btn{
+    fill: red;
+}
+.btn a{
+    text-decoration: none;
+}
+
+.modal-body p{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.card:hover{
+    cursor:default ;
+    animation: expand 0.1s forwards;
+}
+
+@keyframes expand{
+    0%{
+        width: 18%;
+        height: 18%;
+    }
+    100%{
+        width: 20%;
+        height: 20%;
+        box-shadow: 0px 4px 10px 2px;
+    }
+    
+}
+
+.about-img img:hover{
+    border-radius: 15px;
+    animation: rotate 0.5s forwards;
+    transition: linear;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(-10deg);
+        box-shadow: 10px 10px;
+    }
+}
+
+.col-6 h2:hover{
+    color: red;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.form-label{
+    font-size: 25px;
+}
+
+.pad{
+    padding: 100px;
+    margin-bottom: -40px;
+    background-color: whitesmoke;
+}
+
+.pad1{
+    padding: 20px 40px;
+}
+
+.pad2{
+    margin-bottom: -200px;
+    background-color:whitesmoke;
+    margin-left:-8px;
+    margin-right: -8px;
+}
+
+.highlight {
+    filter:drop-shadow(0px 2px 10px  grey);
+    border: 2px solid;
+    margin-bottom: 80px;
+    margin-top: -40px;
+}
+
+.container-fluid a{
+    font-size: 25px;
+}
+
+.footer div{
+    position: static;
+    border: 2px solid black;
+    margin-top: -40px;
+    margin-left: 1400px;
+    padding-left: -400px;
+}
+
+.foot button{
+    padding:0px 40px;
 }

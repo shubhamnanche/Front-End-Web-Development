@@ -1,0 +1,63 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+
+.form-container{
+    border:10px solid;
+    padding: 60px;
+    background-image: linear-gradient(to right, #43cea2 ,  #185a9d);
+    filter: contrast(150%);
+}
+
+.form-container fieldset{
+    padding: 20px;
+    border:40px solid darkblue;
+    background-image: linear-gradient(217deg,#42275a,#734b6d);
+    opacity: 0.9;
+    color: whitesmoke;
+}
+.form-container div{
+    padding: 10px;
+    margin-right: 20px;
+}
+
+textarea{
+    min-width: 800px;
+    min-height: 80px;
+    right: 0;
+    background-image: linear-gradient(to right, #f4e2d8, #ddd6f3 );
+    filter: saturate(150%);
+}
+
+input{
+    background-image: linear-gradient(to right, #f4e2d8, #ddd6f3 );
+}
+.spacing{
+    width: 800px;
+    /* border: 1px solid; */
+}
+.field label{
+    padding: 10px 50px;
+    font-size: 24px;
+    font-weight: 600;
+    /* border:1px solid; */
+    margin-right: 20px;
+    margin-left:-10px;
+}
+
+.field legend{
+    font-size: 30px;
+    font-weight: 800;
+}
+
+#space{
+    margin-left: 30px;
+}
+
+input[type="radio"]{
+    border:1px;
+    width:5%;
+    height: 1em;
+}
